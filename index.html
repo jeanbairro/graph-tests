@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Graph search</title>
+		<link rel="stylesheet" href="lib/css/bootstrap.min.css">
+		<link rel="stylesheet" href="app/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="page-header">Graph Search</h1>
+			<p>Informe o arquivo fonte, o método de busca (profundidade ou largura), 
+			os vértices inicial e final e clique em <strong>Calcular</strong>.</p>
+
+			<br/>
+			
+			<!-- grid utilizando bootstrap -->
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label>Arquivo</label>
+						<input type="file" id="fileInput" class="filestyle" data-icon="false" data-placeholder="Selecione o XML" data-buttonText="Procurar">
+					</div>
+				</div>
+				<div class="col-sm-1">
+					<div class="form-group-btn">
+						<button id="calcular" class="btn btn-default" type="button">Calcular</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="lib/js/jquery-3.1.0.min.js"></script>
+		<script src="lib/js/bootstrap.min.js"></script>
+		<script src="lib/js/bootstrap-filestyle.min.js"></script>
+		<script src="app/js/reader.js"></script>
+		<script src="app/js/domain.js"></script>
+		<script src="app/js/search-strategy.js"></script>
+		<script src="app/js/main.js"></script>
+		<script src="app/js/test.js"></script>
+		<script>
+			$("#fileInput").change(function(e) {
+				$("#path").hide();
+				$("#path-result .success").hide();
+				$("#path-result .error").hide();
+				readXml(e);
+			});
+		</script>
+	</body>
+<html>
