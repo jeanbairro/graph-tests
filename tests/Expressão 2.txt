@@ -1,0 +1,30 @@
+
+	Distribution Summary
+
+Distribution:	Beta         
+Expression:	2 * BETA(1.48, 1.2)
+Square Error:	0.003686
+
+Chi Square Test
+  Number of intervals	= 7
+  Degrees of freedom 	= 4
+  Test Statistic     	= 1.39
+  Corresponding p-value	> 0.75
+
+Kolmogorov-Smirnov Test
+  Test Statistic	= 0.0555
+  Corresponding p-value	> 0.15
+
+	Data Summary
+
+Number of Data Points	= 100
+Min Data Value       	= 0.005
+Max Data Value       	= 1.88
+Sample Mean          	= 1.11
+Sample Std Dev       	= 0.519
+
+	Histogram Summary
+
+Histogram Range    	= 0 to 2
+Number of Intervals	= 10
+

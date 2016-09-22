@@ -1,0 +1,28 @@
+Distribution Summary
+
+Distribution:	Normal       
+Expression:	NORM(1.11, 0.583)
+Square Error:	0.023451
+
+Chi Square Test
+  Number of intervals	= 6
+  Degrees of freedom 	= 3
+  Test Statistic     	= 16.6
+  Corresponding p-value	< 0.005
+
+Kolmogorov-Smirnov Test
+  Test Statistic	= 0.0874
+  Corresponding p-value	> 0.15
+
+	Data Summary
+
+Number of Data Points	= 100
+Min Data Value       	= 0.04
+Max Data Value       	= 2.58
+Sample Mean          	= 1.11
+Sample Std Dev       	= 0.586
+
+	Histogram Summary
+
+Histogram Range    	= 0 to 2.83
+Number of Intervals	= 10
