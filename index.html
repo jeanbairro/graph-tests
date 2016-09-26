@@ -14,21 +14,40 @@
 		<div class="container">
 			<h1 class="page-header">Graph Tests</h1>
 			<div id="grafico"></div>
-			
-			<h3>Grupo de Amostras 1</h1>
-			<h4>Média: <span id="media_1"><span></h4>
-			<h4>Desvio Padrão: <span id="desvio_1"><span></h4>
-			<h4>Mediana: <span id="mediana_1"><span></h4>
 
-			<h3>Grupo de Amostras 2</h1>
-			<h4>Média: <span id="media_2"><span></h4>
-			<h4>Desvio Padrão: <span id="desvio_2"><span></h4>
-			<h4>Mediana: <span id="mediana_2"><span></h4>
+			<h3 class="page-header">Amostras</h3>
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>Grupo de Amostras 1</h4>
+					<h5>Média: <span id="media_1"><span></h5>
+					<h5>Desvio Padrão: <span id="desvio_1"><span></h5>
+					<h5>Mediana: <span id="mediana_1"><span></h5>
+				</div>
+				<div class="col-sm-6">
+					<h4>Grupo de Amostras 2</h4>
+					<h5>Média: <span id="media_2"><span></h5>
+					<h5>Desvio Padrão: <span id="desvio_2"><span></h5>
+					<h5>Mediana: <span id="mediana_2"><span></h5>
+				</div>
+			</div>
 
-			<h3>Grupo de Amostras 3</h1>
-			<h4>Média: <span id="media_3"><span></h4>
-			<h4>Desvio Padrão: <span id="desvio_3"><span></h4>
-			<h4>Mediana: <span id="mediana_3"><span></h4>
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>Grupo de Amostras 3</h4>
+					<h5>Média: <span id="media_3"><span></h5>
+					<h5>Desvio Padrão: <span id="desvio_3"><span></h5>
+					<h5>Mediana: <span id="mediana_3"><span></h5>
+				</div>
+			</div>
+
+			<h3 class="page-header">Correlação de Pearson</h3>
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>Grupo 1 X Grupo 2: <span id="correlacao_1"><span></h4>
+					<h4>Grupo 1 X Grupo 3: <span id="correlacao_2"><span></h4>
+					<h4>Grupo 2 X Grupo 3: <span id="correlacao_3"><span></h4>
+				</div>
+			</div>
 		</div>
 		<script src="lib/js/jquery-3.1.0.min.js"></script>
 		<script src="lib/js/bootstrap.min.js"></script>
@@ -182,6 +201,10 @@
 				$("#mediana_1").html(math.median(samples_1));
 				$("#mediana_2").html(math.median(samples_2));
 				$("#mediana_3").html(math.median(samples_3));
+
+				$("#correlacao_1").html(calc.pearsonCorrelation(new Array(samples_1, samples_2), 0, 1));
+				$("#correlacao_2").html(calc.pearsonCorrelation(new Array(samples_1, samples_3), 0, 1));
+				$("#correlacao_3").html(calc.pearsonCorrelation(new Array(samples_2, samples_3), 0, 1));
 			});
   		</script>
 	</body>

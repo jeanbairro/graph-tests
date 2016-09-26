@@ -41,13 +41,6 @@ function startTests(xml, searcher) {
 	for (var i = 0; i < testsFromNormalDist.length; i++) {
 		console.log(i + ": " + testsFromNormalDist[i]);
 	};
-
-	console.log("----- teste ---------")
-	var data = new Array(
-                    new Array(21,54,60,78,82),
-                    new Array(20,54,54,65,45)
-        );
-	console.log(calc.pearsonCorrelation(data,0,1))
 }
 
 function testFromNormalDist() { 
